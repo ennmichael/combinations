@@ -21,5 +21,11 @@ namespace Program
         
     private:
         mutable Impl m_impl { }; // Does the complex stuff
+        /*
+         * I decided I would decouple implementation and 
+         * interface into two seperate classes.
+         * Otherwise, this would be a clusterfuck of private
+         * members and functions. The code is much cleaner this way.
+         */
     };
 }
