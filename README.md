@@ -4,6 +4,7 @@ A small program for generating combinations of letters and/or numbers.
 
 ## Example runs
 
+```
 ----
 Size: 3
 Elements: abc
@@ -58,4 +59,4 @@ aabb
 babb
 abbb
 bbbb
-
+```
