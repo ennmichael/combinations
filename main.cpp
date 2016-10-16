@@ -9,7 +9,7 @@ int main()
     auto combinationParameters = ReadCombinationParameters(std::cin);
     RemoveMultiples(combinationParameters.source);
     
-    std::cout << combinationParameters.source << std::endl;
+    std::cout << combinationParameters.source << "\n\n";
     
     auto comb = Combinator { combinationParameters };
     
