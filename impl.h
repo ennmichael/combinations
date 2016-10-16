@@ -3,15 +3,23 @@
 #include <vector>
 #include <string>
 
-struct CombinationParameters;
-
 namespace Program
 {
-    struct CombinationParameters final
-    {
+    struct CombinationParameters final // Parameters for the
+    {                                  // combinations generator
         std::size_t size { };
         std::string source { };
     };
+    
+    
+    /*******
+     * QUICK WARNING
+     * This code isn't maximally optimised.
+     * If you need something fast, you may wanna change 
+     * a few things. I was too lazy and
+     * went with a quick-and-dirty solution.
+     *******/
+    
     
     class Impl final
     {
