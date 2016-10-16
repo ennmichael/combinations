@@ -19,6 +19,7 @@ namespace Program
     
     auto RemoveMultiples(std::string& str) -> void
     {
-        str.assign(std::unique(str.begin(), str.end()), str.end());
+        std::sort(str.begin(), str.end());
+        str.assign(str.begin(), std::unique(str.begin(), str.end()));
     }
 }

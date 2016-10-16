@@ -9,6 +9,8 @@ int main()
     auto combinationParameters = ReadCombinationParameters(std::cin);
     RemoveMultiples(combinationParameters.source);
     
+    std::cout << combinationParameters.source << std::endl;
+    
     auto comb = Combinator { combinationParameters };
     
     std::cout << comb.Result() << std::endl;
